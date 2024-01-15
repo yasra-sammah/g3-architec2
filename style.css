@@ -99,6 +99,56 @@ main{
 .teams-contant b{
    font-size: 2rem;
 }
+/* feature */
+.features{
+  margin-top: 130px;
+  display: flex;
+  gap: 130px;
+}
+.features .section-title{
+  border-left: 5px solid #FF900E;
+  padding-left: 20px;
+}
+.feature-img img{
+  height: 90%;
+  margin-left: 90px;
+}
+.ten-years{
+  border-radius: 8px;
+  background-color: #FF900E;
+  width: 300px;
+  padding: 30px;
+  height: 120px;
+   position: relative;
+   bottom: 100px;
+  /* align-items: center; */
+}
+.ten-years h2{
+  color: white;
+  font-size: 4rem;
+  margin: 0;
+}
+.ten-years p{
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+.feature-description{
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.card{
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.text-light-gray{
+  color: #727272;
+  font-size: 1rem;
+}
 /* fact */
 .facts{
   margin-left: 25px;
@@ -151,7 +201,25 @@ main{
   width: 150px;
   
  }
+ footer{
+  
+  color: #727272;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  width: 600px;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding: 20px 140px;
+  border-radius: 5px;
+  background-color:  rgba(255, 144, 14, 0.10);
+ }
+.footer{
+ padding: 40px 30px;
+ font-size: 1rem;
+ align-items: center;
 
+}
 
 /* responsive area: */
 @media screen and (max-width:576px) {
@@ -163,12 +231,20 @@ main{
   nav,
   .teams-contaner ,
   .fact-img-card,
-  .sponsors-img-container{
+  .sponsors-img-container,.features{
    flex-direction: column;
   }
  
  .teams-img-contant{
    grid-template-columns: 1fr;
+ }
+ .feature-img img{
+  width: 50%;
+  margin-left: 0;
+ }
+ .ten-years{
+  max-width: 300px;
+  position: static;
  }
  }
 
